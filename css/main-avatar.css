@@ -1,0 +1,582 @@
+
+.main-content-avatar-box-Desktop {
+	position: absolute;
+	display: flex;
+
+	left: 0;
+	right: 0;
+
+	padding: 0;
+	margin: 0;
+
+
+	width: 500px;
+
+	justify-content: left; /* Horizontally left */
+	align-items: center;  /* Vertically center */
+
+	font-family: var(--sitefont);
+	color:  var(--text-color-alt);
+	
+	z-index: 1055;
+	
+	/* border: solid 1px green; */
+}
+
+.main-content-avatar-box-Desktop img {
+	width: 320px;
+	height: 320px;
+	border-radius: 60%;
+	border: solid 5px #ff0000;
+	padding: 0;
+	margin: 0;
+	
+	transform: translateX(-100px);
+	
+	z-index: 1055;
+}
+
+
+
+.main-content-Mobile-ImageBox {
+	padding: 0;
+	margin: 0;
+	width: 160px;
+	height: 160px;
+	align-items: center;  /* Vertically center */
+	z-index: 1055;
+	
+	/* border: solid 1px green; */
+}
+
+.main-content-Mobile-ImageBox img {
+	width: 150px;
+	height: 150px;
+	border-radius: 60%;
+	border: solid 5px var(--tu-red);
+	padding: 0;
+	margin: 0;
+	z-index: 1055;
+}
+
+
+.main-speech-bubble-Desktop-imgBox {
+	padding: 0;
+	margin: 0;
+	width: 25px;
+	height: 25px;
+	align-items: center; 	
+}
+
+.main-speech-bubble-Desktop-imgBox img {
+	width: 20px;
+	height: 20px;
+	border-radius: 60%;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.main-speech-bubble-Desktop {
+	box-sizing: border-box;
+	/* display and position */
+	position: relative;
+	transform: translateX(-80px); 
+	justify-content: center; /* Horizontally center */
+	align-items: center;  /* Vertically center */
+
+	/* size */
+	width: auto;
+	max-width: 240px;
+	
+	height: auto;
+	min-height: 50px;
+	max-height: 240px;
+
+	/* appearance */
+	background-color: var(--speech-bubble-bgcolor);
+	border-radius: 16px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 3055;
+	padding: 8px 12px;
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--speech-bubble-fontcolor);
+	font-size: 24px;
+	font-weight: none;
+	white-space: wrap;
+}
+
+
+
+.main-speech-bubble-Desktop::before {
+	content: '';
+	position: absolute;
+	top: 35px;
+	right: 100%; /* Change the arrow position to the left side */
+	margin-top: -10px;
+	/*
+	height: 20px;
+	width: 40px;
+	*/
+
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent #F2F2F2 transparent transparent; /* Change the arrow direction to face left */
+}
+
+.speech-bubble-content {
+	box-sizing: border-box;
+	
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--speech-bubble-fontcolor);
+	font-size: 32px;
+	font-weight: none;
+	white-space: wrap;
+}
+
+
+
+
+.main-options-container-Desktop {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	
+	padding: 10px;
+
+	width: 128px;
+	height: 128px;
+
+	justify-content: left; /* Horizontally left */
+	align-items: center;  /* Vertically center */
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--text-color-alt);
+	font-size: 24px;
+	font-weight: none;
+	white-space: wrap;
+
+	background-color: #FFFFFF;
+	
+	
+	z-index: 1050;
+	
+	border-radius: 24px;
+	
+	border: solid 5px var(--tu-red);
+}
+
+
+
+
+
+.main-options-container-Desktop-Red {
+	position: relative;
+	display: flex;
+	
+	padding: 10px;
+
+	width: 128px;
+	height: 128px;
+
+	justify-content: left; /* Horizontally left */
+	align-items: center;  /* Vertically center */
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--text-color-alt);
+	font-size: 24px;
+	font-weight: none;
+	white-space: wrap;
+	
+	background: linear-gradient(to bottom, #FAA0A0, #EE4B2B, #ff0404, #ff0404, #ff0404, #ff0404, #ff0404, #ff0404, #ff0404, #ff0404, #ff0404, #ff0404, #4A0404);
+	
+	
+	z-index: 1050;
+	
+	border: solid 1px #0000;
+	border-radius: 24px;
+	
+	/* border: solid 5px var(--tu-red); */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+.main-options-container-Desktop-AboutBG {
+	position: relative;
+	display: flex;
+	
+	padding: 10px;
+
+	width: 128px;
+	height: 128px;
+
+	justify-content: left; /* Horizontally left */
+	align-items: center;  /* Vertically center */
+
+	background-image: url('../assets/images/about_Silhouette.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--text-color);
+	font-size: 32px;
+	font-weight: 700;
+	white-space: wrap;
+
+}
+
+
+
+
+
+
+
+.visitor-speech-bubble-container-Mobile {
+	display: none;
+	
+	box-sizing: border-box;
+
+	text-align: right;
+	justify-content: right; /* Horizontally right */
+	align-items: center; /* Vertically center */
+
+	right: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+
+}
+
+
+
+
+
+
+
+
+.visitor-speech-bubble-container-Tablet {
+	display: none;
+	
+	box-sizing: border-box;
+
+	text-align: right;
+	justify-content: right; /* Horizontally right */
+	align-items: center; /* Vertically center */
+
+	padding: 0px 5px 0 300px;
+	margin: 0px 0px;
+
+	width:  720px;
+	height: 275px;
+
+	/* border: solid 1px #00ff00; */
+}
+
+
+
+.visitor-speech-bubble-container-Desktop {
+	display: flex;
+	
+	box-sizing: border-box;
+
+	text-align: right;
+	justify-content: flex-end; /* Horizontally right */
+	align-items: center; /* Vertically center */
+
+	padding: 0px 50px 0 300px;
+	margin: 0px 0px;
+
+	width:  1080px;
+	height: 275px;
+
+	/* border: solid 1px #00ff00; */
+}
+
+.visitor-speech-bubble-container-Desktop a a:link a:active a:hover {
+	text-decoration: none;
+}
+
+
+
+
+.visitor-speech-bubble-Desktop {
+
+	box-sizing: border-box;
+	justify-content: center; /* Horizontally center */
+	align-items: center;  /* Vertically center */
+
+
+	/* size */
+	width: auto;
+	max-width: 350px;
+	min-height: 75px;
+
+
+	/* appearance */
+	background-color: var(--visitor-bubble-bgcolor);
+	border-radius: 24px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 3055;
+	padding: 8px 12px;
+	margin: 10px 10px 10px 0;
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--speech-bubble-fontcolor);
+	font-size: 24px;
+	font-weight: none;
+	white-space: wrap;
+	
+	transition: transform 0.3s;
+}
+
+.visitor-speech-bubble-Desktop:hover {
+	transform: scale(1.05);
+}
+
+
+
+.visitor-speech-bubble-Desktop::before {
+	content: '';
+	position: absolute;
+	/* top: 45px; */
+	
+	/* transform: translateX(70px); */
+	
+	left: -25px; /* Change the arrow position to the left side */
+	top: 20px;
+	
+
+	border-width: 15px;
+	border-style: solid;
+	border-color: transparent transparent transparent var(--tu-red); /* Change the arrow direction to face left */
+}
+
+.visitor-speech-bubble-Desktop a  {
+	text-decoration: none;
+}
+
+.visitor-speech-bubble-Desktop a:link a:active a:hover {
+	text-decoration: none;
+}
+
+
+
+.visitor-speech-bubble-Mobile {
+
+	box-sizing: border-box;
+	justify-content: center; /* Horizontally center */
+	align-items: center;  /* Vertically center */
+
+	/* size */
+	width: 185px;
+	min-height: 75px;
+
+	/* appearance */
+	background-color: var(--visitor-bubble-bgcolor);
+	border-radius: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 3055;
+	padding: 8px 12px;
+	margin: 10px 10px 10px 0;
+	border: solid 1px #000000;
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--speech-bubble-fontcolor);
+	font-size: 24px;
+	font-weight: none;
+	white-space: wrap;
+}
+
+
+
+.visitor-speech-bubble-Tablet {
+
+	box-sizing: border-box;
+	justify-content: center; /* Horizontally center */
+	align-items: center;  /* Vertically center */
+
+
+	/* size */
+	width: auto;
+	max-width: 250px;
+	min-height: 75px;
+
+
+	/* appearance */
+	background-color: var(--visitor-bubble-bgcolor);
+	border-radius: 24px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 3055;
+	padding: 8px 12px;
+	margin: 10px 1px 10px 0;
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--speech-bubble-fontcolor);
+	font-size: 24px;
+	font-weight: none;
+	white-space: wrap;
+	
+	transition: transform 0.3s;
+}
+
+.visitor-speech-bubble-Tablet:hover {
+	transform: scale(1.05);
+}
+
+
+.visitor-speech-bubble-Tablet a {
+	text-decoration: none;
+}
+
+.visitor-speech-bubble-Tablet a:hover a:active: a:visited {
+	text-decoration: none;
+}
+
+
+.visitor-speech-bubble-Tablet::before {
+	content: '';
+	position: absolute;
+	/* top: 45px; */
+	
+	/* transform: translateX(70px); */
+	
+	left: -25px; /* Change the arrow position to the left side */
+	top: 20px;
+	
+
+	border-width: 15px;
+	border-style: solid;
+	border-color: transparent transparent transparent var(--tu-red); /* Change the arrow direction to face left */
+}
+
+.visitor-speech-bubble-Tablet a a:link a:active a:hover {
+	text-decoration: none;
+}
+
+
+
+.vistor-bubble-content {
+	box-sizing: border-box;
+	
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--speech-bubble-fontcolor);
+	font-size: 28px;
+	font-weight: none;
+	white-space: wrap;
+	
+	
+	justify-content: center; /* Horizontally center */
+	align-items: center;  /* Vertically center */
+	text-align: left;
+	
+	padding: 5px;
+	transition: transform 0.3s;
+	
+}
+
+.vistor-bubble-content a {
+	text-decoration: none;
+}
+
+.vistor-bubble-content a a:link a:active a:hover {
+	text-decoration: none;
+}
+
+.vistor-bubble-content:hover {
+	transform: scale(1.01);
+}
+
+.vistor-bubble-content img {
+	width: 64px;
+	height: 64px;
+	border-radius: 60%;
+	padding: 0;
+	margin: 0;
+	border: solid 1px var(--tu-blue);
+}
+
+
+
+/* CSS for screens with a width of 1080px or more */
+@media screen and (min-width: 1080px) {
+	.visitor-speech-bubble-Desktop {
+		width: 400px;
+		max-width: 400px;
+		font-size: 36px;
+		/* margin: 10px calc(100vw - 62%) 10px 0; */
+		margin: 10px 0 10px 0;
+	}
+}
+
+@media not all and (min-resolution:.001dpcm) {
+	@supports (-webkit-appearance:none) {
+		@media screen and (min-width: 1080px) {
+			.visitor-speech-bubble-Desktop {
+				margin: 10px 50px 10px 0;
+			}
+		}
+	}
+}
+
+/* CSS for screens with a width less than 1080 */
+@media screen and (max-width: 1079px) {
+	.visitor-speech-bubble-Desktop {
+		width: auto;
+		max-width: 350px;
+		font-size: 28px;
+		margin: 10px calc(100vw - 56%) 10px 0;
+	}
+}
+
+
+/* CSS for screens with a width of 840px or more */
+@media screen and (min-width: 840px) {
+	.visitor-speech-bubble-container-Desktop {
+		display: flex; 
+	}
+	.vistor-bubble-content {
+		font-size: 28px;
+	}
+
+
+	.visitor-speech-bubble-container-Tablet {
+	display: none;
+	}
+ 
+}
+
+/* CSS for screens with a width less than 815px */
+@media screen and (max-width: 839px) {
+	.visitor-speech-bubble-container-Desktop {
+		display: none; 
+	}
+
+	.vistor-bubble-content {
+		font-size: 22px;
+	}
+
+	.visitor-speech-bubble-container-Tablet {
+		display: flex;
+	}
+	
+	.speech-bubble-content {
+		font-size: 24px;
+	}
+}

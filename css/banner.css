@@ -1,0 +1,23 @@
+.TU_LOGO_BANNER {
+	box-sizing: border-box;
+	font-family: var(--site-logo-font);
+	font-style: var(--site-logo-font-style);
+	font-size: 56px;
+	width: 100%;
+	/* text-shadow: 2px 2px 1px black, -2px -2px 1px black, 2px -2px 1px black, -2px 2px 1px black; */
+	padding: 0 0 0 15px;
+}
+
+.TU_LOGO_BANNER-Mobile {
+	box-sizing: border-box;
+	font-family: var(--site-logo-font);
+	font-style: var(--site-logo-font-style);
+	font-size: 44px;
+	width: 100%;
+	text-shadow: 2px 2px 1px black, -2px -2px 1px black, 2px -2px 1px black, -2px 2px 1px black;
+	padding: 0 5px 0 10px;
+}
+
+
+
+

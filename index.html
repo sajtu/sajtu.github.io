@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<title>Sean Tu</title>
+
+		<link rel="icon" href="assets/images/favicon_16.png" sizes="16x16" type="image/png">
+		<link rel="icon" href="assets/images/favicon_32.png" sizes="32x32" type="image/png">
+		<link rel="icon" href="assets/images/favicon_64.png" sizes="64x64" type="image/png">
+		<link rel="icon" href="assets/images/favicon_128.png" sizes="128x128" type="image/png">
+		<link rel="icon" href="assets/images/favicon_180.png" sizes="180x180" type="image/png">
+		<link rel="apple-touch-icon" href="assets/images/favicon_180.png" sizes="180x180">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,700;0,900;1,100;1,400&display=swap" rel="stylesheet">  
+
+
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/banner.css">
+		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/canvas.css">
+		<link rel="stylesheet" href="css/site-menu.css">
+		<link rel="stylesheet" href="css/main-avatar.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/footer.css">
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/slick.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<canvas id="starsCanvas"></canvas>
+
+		<div class="navbar"></div>
+
+		<!-- Navigation Bar -------------------------------------------------------------------->
+
+		<!-- Site Menu --------------------------------------------------------------------->
+		<script src="js/site-menu-html.js"></script>
+		<!-- /Site Menu -------------------------------------------------------------------->
+
+
+		<!-- Navigation Bar Logo --->
+		<div class="navbarLogo-Desktop">
+			<!-- Navigation Bar: Logo -->
+			<div class="nav-logo-container-Desktop">
+				<a href="https://www.seantu.org"><img src="assets/images/logo-256-darkBG.png" id="LogoToChange-Desktop" alt="Logo" class="centered-logo" height=60></a>
+
+				<font id="LogoText-Desktop" class="TU_LOGO_BANNER">Sean Tu</font>
+			</div>
+		</div>
+
+		<div class="navbarLogo-Tablet">
+			<!-- Navigation Bar: Logo -->
+			<div class="nav-logo-container-Tablet">
+				<a href="https://www.seantu.org"><img src="assets/images/logo-256-darkBG.png" id="LogoToChange-Tablet" alt="Logo" class="centered-logo" height=50></a>
+
+				<font id="LogoText-Tablet" class="TU_LOGO_BANNER">Sean Tu</font>
+			</div>
+		</div>
+
+		<div class="navbarLogo-Mobile">
+			<!-- Navigation Bar: Logo -->
+			<div class="nav-logo-container-Mobile">
+				<a href="https://www.seantu.org"><img src="assets/images/logo-256-Mobile.png" alt="Logo" id="LogoToChange-Mobile" class="centered-logo" height=50></a>
+			</div>
+		</div>
+
+		
+		<!-- /Navigation Bar Logo -->
+
+		<!-- Navigation Bar for Desktop -->
+		<div class="navbar-Desktop">
+			<!-- Navigation Bar for Desktop -->
+			<div class="navbar-container-Desktop">
+				<!-- Navigation Bar: Nav Buttons -->
+				<div class="nav-buttons-container">
+					<a href="connect.html"><div class="nav-cta-button" >Connect</div></a>
+				</div>
+				<!-- /Navigation Bar: Nav Buttons -->
+			</div>
+		</div>
+		<!-- /Navigation Bar for Desktop -->
+
+
+		<!-- Navigation Bar for Tablet -->
+		<div class="navbar-Tablet">
+			<!-- Navigation Bar for Desktop -->
+			<div class="navbar-container-Tablet">
+				<!-- Navigation Bar: Nav Buttons -->
+				<div class="nav-buttons-container">
+					<a href="connect.html" ><div class="nav-cta-button" >Connect</div></a>
+				</div>
+				<!-- /Navigation Bar: Nav Buttons -->
+			</div>
+		</div>
+		<!-- /Navigation Bar for Tablet -->
+
+
+		<!-- Navigation Bar for Mobile -->
+		<div class="navbar-Mobile">
+			<!-- Navigation Bar for Desktop -->
+			<div class="navbar-container-Mobile">
+				<!-- Navigation Bar: Nav Buttons -->
+				<div class="nav-buttons-container">
+					<a href="connect.html" ><div class="nav-cta-button" >Connect</div></a>
+				</div>
+				<!-- /Navigation Bar: Nav Buttons -->
+			</div>
+		</div>
+		<!-- /Navigation Bar for Mobile -->
+		<!-- /Navigation Bar -------------------------------------------------------------------->
+
+
+
+
+		<!-- Hero Section ----------------------------------------------------------------------->
+		<div class="hero-Mobile-Headline">
+			<h1></h1>
+		</div>
+
+
+
+		<div class="hero-illustration-section">
+
+			<!-- Hero Illustration for Desktop --->
+			<div class="hero-illustration-Desktop">
+
+
+				<div class="hero-illustration-container-avatar-one">
+						<div class="avatar-one-drone-one-box">
+							<div class="avatar-one-drone-one"></div>
+						</div>
+						<div class="avatar-one-drone-three-box">
+							<div class="avatar-one-drone-three"></div>
+						</div>
+						<div class="avatar-one-drone-two-box">
+							<div class="avatar-one-drone-two"></div>
+						</div>
+				</div>
+
+
+				<!-- Hero Story for Desktop ---->
+				<div class="hero-container-Desktop">
+					<div class="hero-box-Desktop">
+
+						<table width=100% height=100%>
+							<td width=55% align=right>
+								<div class="hero-story-box-Desktop">
+									<p><font color="#FFFFFF">IT Nerd with <script src="js/calc_Total_years_title.js"></script> years of diverse experience</font></p><br>
+																		
+									<p class="substory">
+									My career spans systems engineering, software development, infrastructure, technical support, and IT and business operations—from hands-on individual contributor to technology leadership.</p><br>
+
+									<a href="connect.html"><div class="cta-button">Connect</div></a>
+								</div>
+							</td>
+							<td width=45%>
+								<div class="rocket-area-Desktop">
+									<div class="rocket-box">
+										<img src="assets/images/Rocket_Avatar.png" alt="QONSULT Rocket Ship" class="rocket">
+									</div>
+									<div class="avatar-greeting-Desktop">
+										<div class="speech-bubble-Desktop" id="greetingBubble">Hello. Welcome to my site!</div>
+									</div>
+								</div>
+							</td>
+						</table>
+				
+					</div>
+				</div>
+				<!-- /Hero Story for Desktop --->
+
+			</div>
+			<!-- /Hero Illustration for Desktop -->
+
+
+
+			<!-- Hero Illustration for Tablet --->
+			<div class="hero-illustration-Tablet">
+				<div class="hero-illustration-container-avatar-one">
+						<div class="avatar-one-drone-one-box-Tablet">
+							<div class="avatar-one-drone-one-Tablet"></div>
+						</div>
+						<div class="avatar-one-drone-three-box-Tablet">
+							<div class="avatar-one-drone-three-Tablet"></div>
+						</div>
+						<div class="avatar-one-drone-two-box-Tablet">
+							<div class="avatar-one-drone-two-Tablet"></div>
+						</div>
+				</div>
+
+
+				<!-- Hero Story for Tablet ---->
+				<div class="hero-container-Desktop">
+					<div class="hero-box-Tablet">
+
+						<table width=100% height=100%>
+							<td width=45% align=right>
+								<div class="hero-story-box-Tablet">
+									<p><font color="#FFFFFF">IT Nerd & Professional with <script src="js/calc_Total_years_title_tab.js"></script> years of diverse experience</font></p><br>
+									<p class="substory">
+									</p><br>
+
+									<a href="connect.html"><div class="cta-button">Connect</div></a>
+								</div>
+							</td>
+							<td width=55%>
+								<div class="rocket-area-Desktop">
+									<div class="rocket-box">
+										<img src="assets/images/Rocket_Avatar.png" alt="QONSULT Rocket Ship" class="rocket">
+									</div>
+									<div class="avatar-greeting-Desktop">
+										<div class="speech-bubble-Desktop" id="greetingBubble-Tablet">Hello. Welcome to my site!</div>
+									</div>
+								</div>
+							</td>
+						</table>
+				
+					</div>
+				</div>
+				<!-- /Hero Story for Tablet --->
+
+			</div>
+			<!-- /Hero Illustration for Tablet -->
+
+			<!-- Hero Illustration for Mobile --->
+			<div class="hero-illustration-Mobile">
+
+				<!-- Hero Story for Mobile ---->
+				<div class="hero-container-Desktop">
+					<div class="hero-box-Tablet">
+
+						<table width=100% height=100%>
+							<td width=100%>
+								<div class="rocket-area-Desktop">
+									<div class="rocket-box">
+										<img src="assets/images/Rocket_Avatar.png" alt="QONSULT Rocket Ship" class="rocket">
+									</div>
+									<div class="avatar-greeting-Desktop">
+										<div class="speech-bubble-Desktop" id="greetingBubble-Mobile">Hello. Welcome to my site!</div>
+									</div>
+								</div>
+							</td>
+						</table>
+				
+					</div>
+				</div>
+				<!-- /Hero Story for Mobile --->
+
+				<div class="hero-illustration-container-avatar-two">
+						<div class="avatar-two-drone-two-box-Mobile">
+							<div class="avatar-two-drone-two-Mobile"></div>
+						</div>
+						<div class="avatar-two-drone-three-box-Mobile">
+							<div class="avatar-two-drone-three-Mobile"></div>
+						</div>
+						<div class="avatar-two-drone-one-box-Mobile">
+							<div class="avatar-two-drone-one-Mobile"></div>
+						</div>
+				</div>
+
+
+			</div>
+			<!-- /Hero Illustration for Mobile --->
+			
+		</div>
+		<div class="hero-padding"></div>
+		<!-- /Hero Section ---------------------------------------------------------------------->
+
+
+		<!-- Headline Section ----------------------------------------------------------------------->
+		<div class="headline-section">
+
+			<!-- Main Content for Desktop --->
+			<div class="headline-content-Desktop">
+				<h1></h1>
+			</div>
+			<!-- /Main Content for Desktop -->
+
+
+			<!-- Main Content for Tablet --->
+			<div class="headline-content-Tablet">
+				<h1></h1>
+			</div>
+			<!-- /Main Content for Tablet -->
+
+
+			<!-- Main Content for Mobile --->
+			<div class="headline-content-Mobile">
+				<h1></h1>
+			</div>
+			<!-- /Main Content for Mobile -->
+
+
+		</div>
+		<!-- /Headline Section ---------------------------------------------------------------------->
+
+
+		<!-- Main Section ----------------------------------------------------------------------->
+		<section class="main-section">
+
+
+			<!-- Main Content for Desktop and Tablet --->
+			<div class="main-content-Desktop">
+
+				<div class="main-content-avatar-box-Desktop">
+					<img src="assets/images/avatar2.png" >
+					<div class="main-speech-bubble-Desktop">
+						<table width=100% height=100%>
+							<td valign=middle align=left height=100%>
+								<div class="speech-bubble-content">
+									What can I help you with?
+								</div>
+							</td>
+						</table>
+					</div>
+				</div>
+
+
+				<!-- Visitor Content for Desktop --->
+				<div class="visitor-speech-bubble-container-Desktop">
+
+					<table width=100% height=100%>
+						<td align=right valign=bottom>
+
+							<div class="visitor-speech-bubble-Desktop">
+								<a id="transition-button" href="about_s.html">
+								<div class="vistor-bubble-content">
+									<table>
+										<td valign=middle>
+											More about Sean
+										</td>
+										<td valign=middle>
+											<img src="assets/images/avatar2.png">
+										</td>
+									</table> 
+								</div>
+								</a>
+							</div>
+
+
+							<div class="visitor-speech-bubble-Desktop">
+								<a id="transition-button" href="connect.html">
+								<div class="vistor-bubble-content">
+									<table>
+										<td valign=middle>
+											<img src="assets/images/connect.png">
+										</td>
+										<td valign=middle>
+										<div class="nav-cta-button" >Connect</div>
+											 with 
+										</td>
+										<td valign=middle>
+											<img src="assets/images/avatar_small.png">
+										</td>
+									</table> 
+								</div>
+								</a>
+							</div>
+
+
+
+						</td>
+					</table>
+
+				</div>
+				<!-- /Visitor Content for Desktop -->
+
+				<!-- Visitor Content for Tablet --->
+				<div class="visitor-speech-bubble-container-Tablet">
+
+					<table width=100% height=100%>
+						<td align=right valign=bottom>
+
+							<div class="visitor-speech-bubble-Tablet">
+								<a id="transition-button" href="about_s.html">
+								<div class="vistor-bubble-content">
+									<table>
+										<td valign=middle>
+											<img src="assets/images/avatar_small.png">
+										</td>
+										<td valign=middle>
+											More about Sean
+										</td>
+									</table> 
+								</div>
+								</a>
+							</div>
+
+
+							<div class="visitor-speech-bubble-Tablet">
+								<a id="transition-button" href="connect.html">
+								<div class="vistor-bubble-content">
+									<table>
+										<td valign=middle>
+											<img src="assets/images/connect_small.png">
+										</td>
+										<td valign=middle>
+											<div class="nav-cta-button" >Connect</div>
+										</td>
+									</table> 
+								</div>
+								</a>
+							</div>
+
+
+
+						</td>
+					</table>
+
+				</div>
+				<!-- /Visitor Content for Tablet -->
+
+
+			</div>
+			<!-- /Main Content for Desktop and Tablet -->
+
+
+
+			<!-- Main Content for Mobile --->
+			<div class="main-content-Mobile">
+
+				<!-- carousel -------------->
+				<div class="carousel">
+				
+					<div class="carousel-item">
+						<center>
+						<a href="about_s.html">
+						<table width=98%>
+							<td align=right>
+								<div class="main-content-Mobile-ImageBox">
+									<img src="assets/images/avatar2.png" >
+								</div>
+							</td>
+
+							<td valign=middle align=center>
+								<div class="visitor-speech-bubble-Mobile">
+									More about Sean
+								</div>
+							</td>
+						</table>
+						</a>
+						</center>
+					</div>
+
+
+
+					<div class="carousel-item">
+						<center>
+						<a href="connect.html">
+						<table width=98%>
+							<td align=right>
+								<div class="main-content-Mobile-ImageBox">
+									<img src="assets/images/connect.png" >
+								</div>
+							</td>
+
+							<td valign=middle align=center>
+								<div class="visitor-speech-bubble-Mobile">
+									Connect with Sean
+								</div>
+							</td>
+						</table>
+						</a>
+						</center>
+					</div>
+
+
+
+					<!-- /carousel-item ------------->
+
+				</div>
+				<!-- /carousel ------------->
+
+
+			</div>
+			<!-- /Main Content for Mobile -->
+
+		</section>
+		<!-- /Main Section ---------------------------------------------------------------------->
+
+
+
+		<script src="js/PagefadeTransition.js"></script>
+		<script src="js/navbar-transition.js"></script>
+		<!-- script src="js/navbar-transition_Now.js"></script -->
+		<script src="js/star-vertical.js"></script>
+		<script src="js/site-menu.js"></script>
+		<script src="js/speech_bubble_landing.js"></script>
+		<script src="js/slick.activate.js"></script>
+
+		<!-- Footer Section -->
+		<div class="footer-padding">
+			<table height=100%>
+				<tr height=100%><td height=100%></td></tr>
+			</table>
+		</div>
+		<footer>
+			<div class="container">
+				<script src="js/footer-html.js"></script>
+			</div>
+		</footer>
+
+
+	</body>
+</html>

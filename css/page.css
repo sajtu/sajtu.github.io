@@ -1,0 +1,1054 @@
+
+.page-section {
+	left: 0;
+	right: 0;
+	display: flex;
+	position: absolute;
+
+	min-height: calc(100vh - 150px);
+
+	width: 100vw;
+	
+	z-index: 1041;
+	color:  var(--text-color-alt);
+
+	justify-content: center; /* Horizontally center */
+	align-items: top; /* Vertically center */
+
+	padding: 0;
+	margin: 0;
+
+	
+
+	font-family: var(--sitefont);
+	color: var(--text-color);
+	overflow: hidden;
+	
+	/* Debug */
+	/* border: solid 1px black; */
+
+}
+
+
+.page-title-container {
+
+	position: absolute;
+	display: flex;
+	height: 80px;
+	width: 1200px;
+	justify-content: left; /* Horizontally left */
+	align-items: center; /* Vertically center */
+	padding: 0;
+	margin: 0;
+
+	overflow: hidden;
+
+	text-align: left;
+	font-family: var(--sitefont);
+	font-size: 26px;
+	color: var(--text-color);
+
+	background-color: none;
+
+	transform: translateX(200%); /* Apply a transform for animation */
+	
+	/* transition: right 0.5s ease-in-out; /* Add a smooth transition effect */
+	transition: transform 1s ease-in-out;
+	
+	
+	/* Debug */
+	/* border: solid 1px #ffffff; */
+}
+
+.page-title-container.active {
+	transform: translateX(0);
+}
+
+.page-title-container h1 {
+	font-size: 38px;
+	font-weight: 700;
+}
+
+
+
+.page-title {
+	position: absolute;
+	display: flex;
+	height: 80px;
+	width: 720px;
+	left: 200px;
+	/* margin: 10px 0px; */
+	margin: 0;
+	padding: 0 0 0 0;
+	
+	justify-content: left; /* Horizontally left */
+	align-items: center; /* Vertically center */
+	overflow: hidden;
+
+	text-align: left;
+	font-family: var(--sitefont);
+	font-size: 26px;
+	background-color: none;
+	
+	/* Debug */
+	/* border: solid 1px purple; */
+	
+	
+}
+
+/*======================================================================*/
+
+
+
+.page-content-container {
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+	
+	/* height: 80px; */
+	width: 1200px;
+	top: 80px;
+
+	
+	justify-content: left; /* Horizontally left */
+	align-items: top; /* Vertically center */
+	padding: 0 25px 0 0;
+	margin: 0;
+
+	/* overflow: hidden; */
+	overflow-y: auto;
+	overflow-x: hidden;
+	
+	text-align: left;
+	font-family: var(--sitefont);
+	font-size: 24px;
+	color: var(--text-color);
+	white-space: wrap;
+
+	background-color: none;
+
+	transform: translateX(200%); /* Apply a transform for animation */
+	
+	/* transition: right 0.5s ease-in-out; /* Add a smooth transition effect */
+	transition: transform 1.5s ease-in-out;
+	
+	z-index: 1041;
+	
+	/* Debug */
+	/* border: solid 1px orange; */
+}
+
+.page-content-container.active {
+	transform: translateX(0);
+}
+
+.page-content-container h1 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+
+.page-content-optional {
+	position: relative;
+	display: none;
+	/* height: 80px; */
+	width: 1080px;
+	left: 200px;
+	margin: 0;
+	padding: 0 0 0 0;
+	
+	justify-content: left; /* Horizontally left */
+	align-items: center; /* Vertically center */
+	overflow: show;
+	white-space: wrap;
+
+	text-align: left;
+	font-family: var(--sitefont);
+	font-size: 18px;
+	background-color: none;
+	
+	transform: translateY(25px);
+	z-index: 1041;
+	
+	/* Debug */
+	/* border: solid 1px yellow; */
+}
+
+.page-content-optional-long {
+	position: relative;
+	display: none;
+	/* height: 80px; */
+	width: 1080px;
+	left: 200px;
+	margin: 0;
+	padding: 0 0 0 0;
+	
+	justify-content: left; /* Horizontally left */
+	align-items: center; /* Vertically center */
+	overflow: show;
+	white-space: wrap;
+
+	text-align: left;
+	font-family: var(--sitefont);
+	font-size: 18px;
+	background-color: none;
+	
+	transform: translateY(25px);
+	z-index: 1041;
+	
+	/* Debug */
+	/* border: solid 1px yellow; */
+}
+
+
+.page-content {
+	position: relative;
+	display: inline-block;
+	/* height: 80px; */
+	width: 1080px;
+	left: 200px;
+	margin: 0;
+	padding: 0 0 0 0;
+	
+	justify-content: left; /* Horizontally left */
+	align-items: center; /* Vertically center */
+	overflow: show;
+	white-space: wrap;
+
+	text-align: left;
+	font-family: var(--sitefont);
+	font-size: 18px;
+	background-color: none;
+	
+	transform: translateY(25px);
+	z-index: 1041;
+	
+	/* Debug */
+	/* border: solid 1px yellow; */
+}
+
+.content-highlight {
+	transform: translateX(-35%) translateY(-30%);
+
+	position: relative;
+	height: 50px;
+	width: 50px;
+	background-color: var(--tu-red);
+	
+	border-radius: 80px;
+	border: solid 5px var(--white);
+	padding: 0;
+	margin: 0;
+	
+	font-size: 24px;
+	text-weight: bold;
+	color: var(--tu-white);
+
+	justify-content: center; 
+	align-items: center; 
+	text-align: center;
+
+	z-index: 1042;
+	overflow: show;
+	
+}
+
+.connect-highlight {
+	transform: translateX(-35%) translateY(-30%);
+
+	position: relative;
+	height: 50px;
+	width: 150px;
+	background-color: var(--tu-red);
+	
+	border-radius: 80px;
+	border: solid 5px var(--white);
+	padding: 0;
+	margin: 0;
+	
+	font-size: 24px;
+	text-weight: bold;
+	color: var(--tu-white);
+
+	justify-content: center; 
+	align-items: center; 
+	text-align: center;
+
+	z-index: 1042;
+	overflow: show;
+	
+}
+
+
+.sub-content {
+	position: relative;
+	
+	font-size: 18px;
+	color: var(--text-color-alt);
+
+	background-color: var(--white);
+
+	transform: translateX(25px) translateY(-50px);
+	width: 700px;
+
+	justify-content: left; 
+	align-items: center; /* Vertically center */
+	text-align: left;
+
+	border-radius: 10px;
+	border: solid 2px var(--white);
+	padding: 20px;
+	margin: 0 0 0 0;
+	width: 
+	
+
+	z-index: 1041;
+	overflow: hidden;
+}
+
+.sub-connect {
+	position: relative;
+	
+	font-size: 18px;
+	color: var(--text-color-alt);
+
+	background-color: var(--white);
+
+	transform: translateX(25px) translateY(-50px);
+	width: 500px;
+
+	justify-content: left; 
+	align-items: center; /* Vertically center */
+	text-align: left;
+
+	border-radius: 10px;
+	border: solid 2px var(--white);
+	padding: 20px;
+	margin: 0 0 0 0;
+	width: 500
+
+	z-index: 1041;
+	overflow: hidden;
+}
+
+.sub-connect table {
+	width: 100%;
+}
+
+.sub-connect tr {
+	width: 100%;
+	padding: 5px;
+}
+
+.sub-connect td:nth-child(2) {
+	width: 100%;
+	padding: 5px;
+}
+
+.sub-connect input,
+.sub-connect select,
+.sub-connect textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 2px;
+	font-size: 18px;
+}
+
+.sub-connect textarea {
+	min-height: 160px;
+	font-size: 18px;
+}
+
+/*======================================================================*/
+/* CSS for screens by width                                             */
+/*======================================================================*/
+
+/* CSS for screens with a width of 1600px or more */
+/* Hi-resolutioh monitors */
+@media screen and (min-width: 1600px) {
+	
+	/* Desktop Sizes */
+	.page-section {
+		min-height: calc(100vh - 150px);
+	}
+	.page-title-container {
+		width: 1080px;
+	}
+	.page-title {
+		width: 1080px;
+		left: 0px;
+		padding: 0 0 0 0;
+	}
+
+	.page-content-container {
+		width: 1080px;
+		top: 80px;
+	}
+	.page-content-optional {
+		width: 1020px;
+		left: 60px;
+		padding: 0 0 0 0;
+	}
+
+	.page-content-optional-long {
+		width: 1020px;
+		left: 60px;
+		padding: 0 0 0 0;
+	}
+	
+	.page-content {
+		width: 1020px;
+		left: 60px;
+		padding: 0 0 0 0;
+	}
+
+	.content-highlight {
+		transform: translateX(-35%) translateY(-30%);
+		height: 50px;
+		width: 50px;
+		border: solid 5px var(--white);
+		font-size: 24px;
+	}
+
+	.sub-content {
+		width: 700px;
+		font-size: 18px;
+		padding: 20px;
+	}
+
+	.connect-highlight {
+		transform: translateX(-35%) translateY(-30%);
+		height: 50px;
+		width: 150px;
+		border: solid 5px var(--white);
+		font-size: 24px;
+	}
+
+	.sub-connect {
+		width: 500px;
+		font-size: 18px;
+		padding: 20px;
+	}
+
+
+}
+
+
+/* CSS for screens with a width between 1200px and  1600px */
+/* Modern desktop monitors */
+@media screen and (min-width: 1201px) and (max-width: 1599px) {
+	
+	/* Desktop Sizes */
+	.page-section {
+		min-height: calc(100vh - 150px);
+	}
+	.page-title-container {
+		width: 1080px;
+	}
+	.page-title {
+		width: 1080px;
+		left: 200px;
+		padding: 0 0 0 0;
+	}
+
+	.page-content-container {
+		width: 1080px;
+		top: 80px;
+	}
+
+	.page-content-optional {
+		width: 880px;
+		left: 200px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+	.page-content-optional-long {
+		width: 880px;
+		left: 200px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+
+
+	.page-content {
+		width: 880px;
+		left: 200px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+
+	.content-highlight {
+		transform: translateX(-35%) translateY(-30%);
+		height: 50px;
+		width: 50px;
+		border: solid 5px var(--white);
+		font-size: 24px;
+	}
+
+	.sub-content {
+		width: 700px;
+		font-size: 18px;
+		padding: 20px;
+	}
+
+
+
+
+
+	.connect-highlight {
+		transform: translateX(-35%) translateY(-30%);
+		height: 50px;
+		width: 150px;
+		border: solid 5px var(--white);
+		font-size: 24px;
+	}
+
+	.sub-connect {
+		width: 500px;
+		font-size: 18px;
+		padding: 20px;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* CSS for screens with a width between 1080px and  1200px */
+/* laptop and desktop monitors */
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+	
+	/* Desktop Sizes */
+	.page-section {
+		min-height: calc(100vh - 150px);
+	}
+	.page-title-container {
+		width: 1080px;
+	}
+
+	.page-title {
+		width: 1080px;
+		left: 200px;
+		padding: 0 25px 0 0;
+	}
+
+	.page-content-container {
+		width: 1080px;
+		top: 80px;
+	}
+	.page-content-optional {
+		width: 880px;
+		left: 200px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+	.page-content-optional-long {
+		width: 880px;
+		left: 200px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+	.page-content {
+		width: 880px;
+		left: 200px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+	
+	.content-highlight {
+		transform: translateX(-35%) translateY(-30%);
+		height: 50px;
+		width: 50px;
+		border: solid 5px var(--white);
+		font-size: 24px;
+	}
+	.sub-content {
+		width: 700px;
+		font-size: 18px;
+		padding: 20px;
+	}
+
+
+
+	.connect-highlight {
+		transform: translateX(-35%) translateY(-30%);
+		height: 50px;
+		width: 150px;
+		border: solid 5px var(--white);
+		font-size: 24px;
+	}
+
+	.sub-connect {
+		width: 500px;
+		font-size: 18px;
+		padding: 20px;
+	}
+
+
+
+
+
+
+}
+
+
+
+/* CSS for screens with a width between 720px and  1080px */
+/* laptop monitors, older monitors, and tablets */
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+
+	/* Tablet Sizes */
+	.page-section {
+		min-height: calc(100vh - 150px);
+	}
+
+	.page-title-container {
+		width: 720px;
+	}
+
+	.page-title {
+		width: 720px;
+		left: 150px;
+		padding: 0 25px 0 0;
+	}
+
+	.page-content-container {
+		width: 720px;
+		top: 80px;
+	}
+	.page-content-optional {
+		width: 570px;
+		left: 150px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+
+	.page-content-optional-long {
+		width: 570px;
+		left: 150px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+
+
+	.page-content {
+		width: 570px;
+		left: 150px;
+		padding: 0 0 0 0;
+		font-size: 18px;
+	}
+	.content-highlight {
+		transform: translateX(-15%) translateY(-50%);
+		height: 40px;
+		width: 40px;
+		border: solid 4px var(--white);
+		font-size: 20px;
+	}
+
+	.sub-content {
+		width: 500px;
+		font-size: 16px;
+		padding: 15px;
+	}
+
+	.connect-highlight {
+		transform: translateX(-15%) translateY(-50%);
+		height: 40px;
+		width: 120px;
+		border: solid 5px var(--white);
+		font-size: 20px;
+	}
+
+	.sub-connect {
+		width: 300px;
+		font-size: 16px;
+		padding: 15px;
+	}
+
+
+
+	.sub-connect tr {
+		width: 100%;
+		padding: 3px;
+	}
+
+	.sub-connect td:nth-child(2) {
+		width: 100%;
+		padding: 3px;
+	}
+
+	.sub-connect input,
+	.sub-connect select,
+	.sub-connect textarea {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 2px;
+		font-size: 16px;
+	}
+
+	.sub-connect textarea {
+		min-height: 160px;
+		font-size: 16px;
+	}
+
+
+
+
+
+}
+
+/* CSS for screens with a width between 430px and  720px */
+/* older laptop monitors and tablets */
+@media screen and (min-width: 431px) and (max-width: 719px) {
+
+	/* Tablet Sizes */
+	.page-section {
+		min-height: calc(100vh - 150px);
+	}
+
+	.page-title-container {
+		width: 640px;
+	}
+
+	.page-title {
+		width: 640px;
+		left: 150px;
+		padding: 0 25px 0 0;
+	}
+
+	.page-content-container {
+		width: 640px;
+		top: 80px;
+	}
+	.page-content-optional {
+		width: 490px;
+		left: 150px;
+		padding: 0 0 0 0;
+		font-size: 16px;
+	}
+
+	.page-content-optional-long {
+		width: 490px;
+		left: 150px;
+		padding: 0 0 0 0;
+		font-size: 16px;
+	}
+	.page-content {
+		width: 490px;
+		left: 150px;
+		padding: 0 0 0 0;
+		font-size: 16px;
+	}
+	.content-highlight {
+		transform: translateX(-15%) translateY(-50%);
+		height: 40px;
+		width: 40px;
+		border: solid 4px var(--white);
+		font-size: 20px;
+	}
+
+	.sub-content {
+		width: 300px;
+		font-size: 14px;
+		padding: 10px;
+	}
+
+
+
+
+
+	.connect-highlight {
+		transform: translateX(-15%) translateY(-50%);
+		height: 40px;
+		width: 120px;
+		border: solid 5px var(--white);
+		font-size: 20px;
+	}
+
+	.sub-connect {
+		width: 280px;
+		font-size: 14px;
+		padding: 10px;
+	}
+
+
+
+	.sub-connect tr {
+		width: 100%;
+		padding: 2px;
+	}
+
+	.sub-connect td:nth-child(2) {
+		width: 100%;
+		padding: 2px;
+	}
+
+	.sub-connect input,
+	.sub-connect select,
+	.sub-connect textarea {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 2px;
+		font-size: 14px;
+	}
+
+	.sub-connect textarea {
+		min-height: 100px;
+		font-size: 14px;
+	}
+
+
+
+
+
+}
+
+	
+
+
+/* CSS for screens with a width less than 429px */
+/* Mobile screens */
+@media screen and (min-width: 1px) and (max-width: 430px) {
+
+	/* Mobile Sizes */
+	.page-section {
+		min-height: calc(100vh - 150px);
+	}
+
+	.page-title-container {
+		width: 360px;
+	}
+
+	.page-title {
+		width: 360px;
+		left: 80px;
+		padding: 0 25px 0 0;
+	}
+
+	.page-title-container h1 {
+		font-size: 24px;
+	}
+
+	.page-content-container {
+		width: 360px;
+		top: 65px;
+	}
+	.page-content-optional {
+		width: 280px;
+		left: 80px;
+		padding: 0 0 0 0;
+		font-size: 12px;
+	}
+
+	.page-content-optional-long {
+		width: 280px;
+		left: 80px;
+		padding: 0 0 0 0;
+		font-size: 12px;
+	}
+
+	.page-content {
+		width: 280px;
+		left: 80px;
+		padding: 0 0 0 0;
+		font-size: 12px;
+	}
+
+	.page-content-container h1 {
+		font-size: 18px;
+	}
+
+	.content-highlight {
+		transform: translateX(-15%) translateY(-50%);
+		height: 35px;
+		width: 35px;
+		border: solid 4px var(--white);
+		font-size: 16px;
+	}
+
+	.sub-content {
+		width: 225px;
+		font-size: 12px;
+		padding: 10px;
+	}
+
+}
+
+/*======================================================================*/
+/* /CSS for screens by width                                            */
+/*======================================================================*/
+
+
+/*======================================================================*/
+/* CSS for screens by height                                            */
+/*======================================================================*/
+
+/* CSS for screens with a height greater than 1080px                   */
+/* Devices: PC Laptop, Full HD monitors, and Kindle Fire, Apple iPad   */
+@media screen and (min-height: 1080px) {
+
+	.page-content-optional {
+		display: inline-block;
+	}
+
+	.page-content-optional-long {
+		display: inline-block;
+	}
+
+}
+/* /CSS for screens with a height greater than 1080px                  */
+
+
+
+/* CSS for screens with a height between 900px and 1080px               */
+/* Devices: PC Laptop, HD monitors                                      */
+/* Devices: Apple MacBooks and iPad mini(non-retina)                    */
+@media screen and (min-height: 900px) and (max-height: 1079px) {
+
+	.page-content-optional {
+		display: inline-block;
+	}
+	.page-content-optional-long {
+		display: none;
+	}
+
+}
+/* /CSS for screens with a height between 900p and 1080px               */
+
+
+
+
+
+/* CSS for screens with a height between 720px and 900px                */
+/* Devices: PC Laptop, HD monitors                                      */
+/* Devices: Apple MacBooks and iPad mini(non-retina)                    */
+@media screen and (min-height: 720px) and (max-height: 899px) {
+
+	.page-content-optional {
+		display: none;
+	}
+
+	.page-content-optional-long {
+		display: none;
+	}
+
+
+
+}
+/* /CSS for screens with a height between 720p and 900px                */
+
+
+/* CSS for screens with a height between 1px and 719px                  */
+/* Devices: PC Laptop, HD monitors                                      */
+/* Devices: Mobile devices up to 712px in height                        */
+@media screen and (min-height: 1px) and (max-height: 719px) {
+
+	.page-content-optional {
+		display: none;
+	}
+	.page-content-optional-long {
+		display: none;
+	}
+
+}
+/* /CSS for screens with a height between 1px and 719px                 */
+
+
+
+
+/*======================================================================*/
+/* /CSS for screens by height                                           */
+/*======================================================================*/
+
+
+
+
+/*======================================================================*/
+
+
+
+.main-content-Desktop {
+	display: grid;
+	color: var(--text-color);
+	background-color: var(--background-color);
+
+	min-width: 1080px;
+	max-width: 1200px;
+
+	margin-top: auto;
+
+	text-align: center;
+	justify-content: center; /* Horizontally center */
+	align-items: center; /* Vertically center */
+
+	padding: 0px;
+	margin: 0px 0px;
+
+	overflow: show;
+	
+	/* border: solid 1px #ff0000; */
+
+}
+
+
+.main-content-Mobile {
+	display: none;
+	color: var(--text-color);
+	background-color: var(--background-color);
+
+	width: 360px;
+	
+
+	/* max-width: 360px; width: 100vw; */
+	/* height: 100px; */
+
+	text-align: center;
+	justify-content: center; /* Horizontally center */
+	align-items: center; /* Vertically center */
+
+	padding: 0;
+	margin: 0;
+
+	overflow: hide;
+	
+	/* border: solid 1px #ff0000; */
+
+}
+
+
+
+/* CSS for screens with a width of 700px or more */
+@media screen and (min-width: 700px) {
+	.main-content-Desktop {
+		display: grid; 
+	}
+
+	.main-content-Mobile {
+	display: none;
+	}
+ 
+}
+
+/* CSS for screens with a width less than 700px */
+@media screen and (max-width: 699px) {
+	.main-content-Desktop {
+		display: none; 
+	}
+
+	.main-content-Mobile {
+	display: grid;
+	}
+}
+
+
+

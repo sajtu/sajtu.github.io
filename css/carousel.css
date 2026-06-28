@@ -1,0 +1,26 @@
+
+.carousel {
+	display: flex;
+	width: 100vw;
+	transition: transform 0.3s ease-in-out;
+	margin: 0;
+	padding: 0;
+	
+	/* border: solid 1px #00ff00; */
+	
+}
+
+.carousel a {
+	text-decoration: none;
+}
+
+.carousel a:hover a:visited a:active {
+	text-decoration: none;
+}
+
+.carousel-item {
+	/* flex: 0 0 100%; /* Each item takes up 100% width */
+	flex: 0 0 100%;
+	margin: 0;
+	padding: 0;
+}

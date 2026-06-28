@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,700;0,900;1,100;1,400&display=swap');
+
+
+/* 
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Press Start 2P', cursive;
+	font-family: 'Roboto Mono', monospace;
+	font-family: 'Teko', sans-serif;
+	font-family: 'Arimo', sans-serif;
+*/
+
+
+:root {
+	--dark-blue: #192f3f;
+	--vibrant-Orange: #ff6b00; 
+	--electric-Green: #32cd32;
+	--tu-red: #ff0404;
+	--tu-blue: #041bfe;
+	
+	--zafre: #0818A8; /* zafre blue */
+	--indigo: #3F00FF;  /* indigo blue */
+
+	--dark-gray: #333;
+	--white: #f2f2f2;
+
+	--primary-color: var(--tu-blue);
+	--secondary-color: var(--tu-blue);
+	--accent-color: var(--tu-red);
+	--background-color: var(--primary-color);
+
+	--text-color: var(--white);
+	--text-color-alt: #000000;
+	--text-gray: #404040;
+
+	--nav-BGColor: var(--white);
+	--nav-cta-text-color: var(--white);
+
+	--hero-border-color: black;
+	--hero-story-fontcolor: var(--white);
+
+	--sitemenu-bgcolor: var(--tu-red);
+	--sitemenu-bordercolor: var(--white);
+	--sitemenu-titlecolor: var(--white);
+	--sitemenu-fontcolor: var(--white);
+	--sitefont: 'Arimo', sans-serif;
+	--sitefont-style: none;
+	--sitefont-decoration: none;
+
+	--site-logo-font: 'Teko', sans-serif;
+	--site-logo-font-style: italic;
+	--site-logo-font-decoration: none;
+
+	--speech-bubble-bgcolor: var(--white);
+	--speech-bubble-fontcolor: var(--text-gray);
+	--speech-bubble-linkcolor: black;
+	--speech-bubble-linkshadow: var(--tu-red);
+
+	--visitor-bubble-bgcolor: #CCF7FE;
+
+	--footer-bgcolor: var(--dark-gray);
+	--footer-txtcolor: var(--white);
+
+	--drone-size-desktop: 60px;
+	--drone-size-tablet: 40px;
+
+	--site-menu-icon-size: 40px;
+
+	--site-menu-font: 'Arimo', sans-serif;
+	--site-menu-font-style: none;
+	
+	--site-app-icon-size: 70px;
+	--site-app-icon-img-size: 65px;
+
+}
+
+
+/* Reset some default styles */
+	body, h1, h2, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Apply a background color to the entire body */
+html, body {
+	box-sizing: border-box;
+	font-family: var(--sitefont);
+	background-color: var(--background-color);
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+body a {
+	text-decoration: none;
+}
+
+body a:link a:active a:hover {
+	text-decoration: none;
+}
+
+.fade-out {
+	background: var(--background-color);
+	opacity: 0;
+	animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	background: var(--background-color);
+	opacity: 1;
+	animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+}
+
+.cta-button {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: var(--accent-color);
+	color: var(--nav-cta-text-color);  
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px;
+	border: solid 2px #000000;
+	margin: 0;
+}
+
+.cta-button:hover {
+	background-color: var(--accent-color);
+}
+
+
+
+
+.connect-button {
+	display: inline-block;
+	padding: 5px 20px;
+	background-color: var(--accent-color);
+	color: var(--nav-cta-text-color);  
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px;
+	border: none;
+	margin: 0;
+}
+
+.connect-button:hover {
+	background-color: var(--accent-color);
+}
+
+
+
+.site-logo-font {
+	font-family: var(--site-logo-font);
+	font-style: var(--site-logo-font-style);
+	text-decoration: var(--site-logo-font-decoration);
+	font-size: 130%;
+	font-weight: normal;
+}
+
+.site-font {
+	font-family: var(--sitefont);
+	font-style: var(--sitefont-style);
+	text-decoration: var(--sitefont-decoration);
+}

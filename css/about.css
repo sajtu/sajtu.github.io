@@ -1,0 +1,512 @@
+
+.page-other-container {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	
+	/* bottom: 200px; */
+	bottom: calc(100vh - (100vh - 45px));
+	
+	left: 0;
+	right: 0;
+	width: 100vw;
+
+	justify-content: center; 
+	align-items: center;
+	text-align: center;
+
+
+	font-size: 28px;
+	text-align: center;
+	font-family: var(--sitefont);
+	color: var(--text-color);
+
+	z-index: 1046;
+	overflow: hidden;
+
+	/* debug ------------------------- */
+	/* border: solid 1px #FFF000 ; */
+}
+
+.page-other-menu-Desktop {
+	position: relative;
+	display: flex;
+
+	justify-content: center; 
+	align-items: center;
+	text-align: center;
+	
+	gap: 20px;
+
+
+	font-size: 36px;
+	color: var(--text-color);
+	width: calc(100vw - 300px);
+
+	z-index: 1047;
+	overflow: hidden;
+
+	/* debug -------------------------*/ 
+	/* border: solid 1px #FFF000 ; */
+}
+
+.page-other-menu-Mobile {
+	position: relative;
+	display: none;
+
+	justify-content: center; 
+	align-items: center;
+	text-align: center;
+
+
+	font-size: 18px;
+	color: var(--text-color);
+	width: calc(100vw - 100px);
+
+	z-index: 1047;
+	overflow: show;
+
+	/* debug -------------------------*/ 
+	/* border: solid 1px #FFF000 ; */
+
+}
+
+.other-menu-item {
+	border-radius: 60px;
+	background-color: var(--visitor-bubble-bgcolor);
+	margin: 0;
+	padding: 0px 10px;
+	font-size: 18px;
+	color: var(--text-color-alt);
+}
+
+.other-menu-item img {
+	border-radius: 60px;
+	background-color: var(--visitor-bubble-bgcolor);
+	border: solid 2px var(--tu-red);
+	transform: translateX(-8px) translateY(2px);
+}
+
+/* CSS for screens with a height greater than than 926px */
+/* Display menu for desktop */
+/* Hide menu for mobile*/
+@media screen and (min-height: 927px) {
+	.page-other-container {
+		bottom: calc(100vh - (100vh - 45px));
+		font-size: 28px;
+	}
+
+	.page-other-menu-Desktop {
+		display: flex;
+	}
+	.page-other-menu-Mobile {
+		display: none;
+	}
+}
+/* /CSS for screens with a height less than 926px */
+
+/* CSS for screens with a height less than 926px */
+/* Display menu for mobile*/
+/* Hide menu for desktop*/
+@media screen and (min-height: 1px) and (max-height: 926px) {
+	.page-other-container {
+		bottom: calc(100vh - (100vh - 60px));
+		font-size: 22px;
+	}
+
+	.page-other-menu-Desktop {
+		display: none;
+	}
+	.page-other-menu-Mobile {
+		display: flex;
+	}
+}
+/* /CSS for screens with a height less than 926px */
+
+
+
+/* ======================================================= */
+
+
+.page-other-menu-Mobile-ImageBox {
+	padding: 0;
+	margin: 0;
+	width: 160px;
+	height: 160px;
+	align-items: center;  /* Vertically center */
+	z-index: 1055;
+	
+	/* border: solid 1px green; */
+}
+
+.page-other-menu-Mobile-ImageBox img {
+	width: 150px;
+	height: 150px;
+	border-radius: 60%;
+	border: solid 5px var(--tu-red);
+	padding: 0;
+	margin: 0;
+	z-index: 1055;
+}
+
+
+
+.page-other-menu-bubble-Mobile {
+
+	box-sizing: border-box;
+	justify-content: center; /* Horizontally center */
+	align-items: center;  /* Vertically center */
+
+	/* size */
+	width: 185px;
+	min-height: 75px;
+
+	/* appearance */
+	background-color: var(--visitor-bubble-bgcolor);
+	border-radius: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 1056;
+	padding: 8px 12px;
+	margin: 10px 10px 10px 0;
+	/* border: solid 1px #000000; */
+
+	/* text appearance */
+	font-family: var(--sitefont);
+	color: var(--speech-bubble-fontcolor);
+	font-size: 24px;
+	font-weight: none;
+	white-space: wrap;
+}
+
+
+
+/* CSS for screens with a height greater than than 667px */
+/* Mobile settings */
+@media screen and (min-height: 668px) {
+	.page-other-menu-Mobile-ImageBox  {
+		width: 160px;
+		height: 160px;
+	}
+	.page-other-menu-Mobile-ImageBox img {
+		width: 150px;
+		height: 150px;
+	}
+	.page-other-menu-bubble-Mobile {
+		width: 185px;
+		height: 75px;
+		font-size: 24px;
+		padding: 8px 12px;
+		margin: 10px 10px 10px 0;
+		border: solid 1px #000000;
+	}
+
+
+	/* ----------- */
+	
+	.slick-dotted.slick-slider {
+		margin-bottom: 30px;
+	}
+
+	.slick-dots {
+		bottom: -25px;
+	}
+
+	.slick-dots li button {
+		font-size: 0;
+		line-height: 0;
+		width: 20px;
+		height: 20px;
+		padding: 5px;
+	}
+
+	.slick-dots li button:before {
+		font-size: 18px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.page-content-container {
+		top: 80px;
+	}
+
+
+}
+/* CSS for screens with a height greater than than 667px */
+
+/* CSS for screens with a height less than 667px */
+/* Mobile settings */@media screen and (min-height: 1px) and (max-height: 667px) {
+
+	.page-other-menu-Mobile-ImageBox {
+		width: 85px;
+		height: 85px;
+	}
+
+	.page-other-menu-Mobile-ImageBox img {
+		width: 75px;
+		height: 75px;
+	}
+	.page-other-menu-bubble-Mobile {
+		width: 225px;
+		height: 15px;
+		font-size: 16px;
+
+		
+		padding: 20px;
+		margin: 0;
+		border: solid 1px #000000;
+
+	}
+
+	/* ----------- */
+	
+	.slick-dotted.slick-slider {
+		margin-bottom: 1px;
+	}
+
+	.slick-dots {
+		bottom: -10px;
+	}
+
+	.slick-dots li button {
+		font-size: 0;
+		line-height: 0;
+		width: 5px;
+		height: 5px;
+		padding: 5px;
+	}
+
+
+	.slick-dots li button:before {
+		font-size: 8px;
+		width: 10px;
+		height: 10px;
+	}
+
+	.page-content-container {
+		top: 65px;
+	}
+
+}
+/* /CSS for screens with a height less than 667px */
+
+
+
+
+/* ======================================================= */
+
+
+
+.about_avatar {
+	position: fixed;
+	display: flex;
+	left: -100%;
+	bottom: -65px;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	background-color: none; /* Set the background color */
+	justify-content: left; /* Horizontally center */
+	align-items: bottom; /* Vertically center */
+	z-index: 1040;
+
+	transform: translateX(0); /* Apply a transform for animation */
+	transition: left 0.5s ease-in-out; /* Add a smooth transition effect */
+
+	/* border: solid 1px green; */
+	/* Debug */
+	/* border: solid 1px red; */
+}
+
+.about_avatar.active {
+	left: -45px; /* Move to the original position */
+	transform: translateX(0);
+}
+
+
+.about_avatar img {
+	display: block;
+	width: 563px;
+	height: 1080px;
+	padding: 0;
+	margin: 0;
+	transform: translateX(-100px);
+	z-index: 1045;
+}
+
+
+
+/* Screen size for height */
+
+/* Very tall desktop monitors */
+@media screen and (min-height: 1281px) {
+	.about_avatar {
+		bottom: -100px;
+	}
+
+	.about_avatar.active {
+		left: -45px;
+	}
+
+	.about_avatar img {
+		width: 563px;
+		height: 1080px;
+	}
+}
+
+/* CSS for screens with a height greater than 1080px but less than 1280px */
+/* Cover Kindle Fire */
+@media screen and (min-height: 1081px) and (max-height: 1279px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -225px;
+	}
+	.about_avatar.active {
+		left: -45px;
+	}
+	.about_avatar img {
+		width: 534px;
+		height: 1024px;
+	}
+}
+/* CSS for screens with a height greater than 1080px but less than 1280px */
+
+
+/* CSS for screens with a height greater than 926px but less than 1080px */
+/* Covers iPad */
+@media screen and (min-height: 927px) and (max-height: 1080px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -325px;
+	}
+	.about_avatar.active {
+		left: -25px;
+	}
+	.about_avatar img {
+		width: 375px;
+		height: 720px;
+	}
+}
+/* CSS for screens with a height greater than 885px but less than 1080px */
+
+
+
+
+/* 9 & 10) CSS for screens with a height greater than 896px but less than 926px */
+/* Covers 915 and 926 heights */
+@media screen and (min-height: 897px) and (max-height: 926px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -175px;
+	}
+
+	.about_avatar img {
+		width: 375px;
+		height: 720px;
+	}
+}
+/* /CSS for screens with a height greater than 896px but less than 926px */
+
+
+
+
+/* 7 & 8) CSS for screens with a height greater than 854px but less than 896px */
+/* Covers 844 and 854 heights */
+@media screen and (min-height: 855px) and (max-height: 896px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -225px;
+	}
+
+	.about_avatar img {
+		width: 334px;
+		height: 640px;
+	}
+}
+/* /CSS for screens with a height greater than 854px but less than 896px */
+
+
+
+
+
+
+/* 5 & 6) CSS for screens with a height greater than 813px but less than 854px */
+/* Covers 844 and 854 heights */
+@media screen and (min-height: 813px) and (max-height: 854px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -185px;
+	}
+
+	.about_avatar img {
+		width: 334px;
+		height: 640px;
+	}
+}
+/* /CSS for screens with a height greater than 813px but less than 854px */
+
+
+
+/* 3 & 4 CSS for screens with a height greater than 760px but less than 812px */
+/* Covers 800 and 812 heights */
+@media screen and (min-height: 761px) and (max-height: 812px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -180px;
+	}
+	.about_avatar.active {
+		left: 15px;
+	}
+	.about_avatar img {
+		width: 313px;
+		height: 600px;
+	}
+}
+/* /CSS for screens with a height greater than 760px but less than 812px */
+
+
+/* 2) CSS for screens with a height greater than 667px but less than 760px */
+@media screen and (min-height: 668px) and (max-height: 760px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -220px;
+	}
+	.about_avatar.active {
+		left: 20px;
+	}
+	.about_avatar img {
+		width: 267px;
+		height: 512px;
+	}
+}
+/* /CSS for screens with a height greater than 667px but less than 760px */
+
+
+
+/* 1) CSS for screens with a height less than 667px */
+@media screen and (min-height: 1px) and (max-height: 667px) {
+
+	/* Mobile Sizes */
+	.about_avatar {
+		bottom: -130px;
+	}
+	.about_avatar.active {
+		left: -10px;
+	}
+	.about_avatar img {
+		width: 267px;
+		height: 512px;
+	}
+}
+/* /CSS for screens with a height less than 667px */
+
+
+
+
+

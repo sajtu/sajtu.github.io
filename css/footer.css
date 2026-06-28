@@ -1,0 +1,35 @@
+
+/* Footer Styles */
+.footer-padding {
+	display: inline-block;
+	position: relative;
+	flex: 1;
+	
+}
+
+footer {
+
+	position: fixed;
+
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	z-index: 1050;
+
+	margin-top: auto;
+
+
+	background-color: var(--footer-bgcolor);
+	color: var(--footer-txtcolor);
+	text-align: center;
+
+	overflow: hidden;
+	
+	margin: 10px 0 0 0;
+	padding: 10px 0;
+}
+
+footer p {
+	font-size: 14px;
+}
